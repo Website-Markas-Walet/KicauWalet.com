@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="https://oxygen-qpwj6xj8qwa8.oxygen-demo.qsandbox.me/main-sitemap.xsl"?>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+	<sitemap>
+		<loc>/post-sitemap.xml</loc>
+		<lastmod>2022-06-21T06:07:45+00:00</lastmod>
+	</sitemap>
+	<sitemap>
+		<loc>/page-sitemap.xml</loc>
+		<lastmod>2022-06-21T04:09:21+00:00</lastmod>
+	</sitemap>
+	<sitemap>
+		<loc>/category-sitemap.xml</loc>
+		<lastmod>2022-06-21T06:07:45+00:00</lastmod>
+	</sitemap>
+</sitemapindex>
