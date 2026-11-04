@@ -1,4 +1,7 @@
 User-agent: *
 Allow: /
 
+Disallow: /cms/
+Disallow: /*.md$
+
 Sitemap: https://kicauwalet.com/sitemap.xml
