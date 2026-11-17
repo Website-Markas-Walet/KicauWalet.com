@@ -128,6 +128,24 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   .site-footer .footer-brand{font-family:"Josefin Sans",sans-serif;font-weight:700;
     color:var(--ink);font-size:18px;margin-bottom:8px}
   .site-footer a{color:var(--accent)}
+
+  /* ---------- WhatsApp ---------- */
+  .wa-float{position:fixed;right:16px;bottom:16px;z-index:90;display:flex;align-items:center;gap:8px;
+    background:#25D366;color:#fff;font-weight:700;font-size:15px;line-height:1;padding:13px 16px;
+    border-radius:999px;box-shadow:0 4px 14px rgba(0,0,0,.25)}
+  .wa-float:hover{background:#1ebe5b;color:#fff;text-decoration:none}
+  .wa-float svg{width:24px;height:24px;fill:currentColor;flex:none}
+  .wa-cta{margin:36px 0 0;padding:24px 20px;background:var(--bg-soft);border:1px solid var(--line);
+    border-radius:12px;text-align:center}
+  .wa-cta h2{margin:0 0 8px;font-size:22px}
+  .wa-cta p{margin:0 0 16px;color:var(--muted)}
+  .wa-cta a.wa-btn{display:inline-block;background:#25D366;color:#fff;font-weight:700;padding:12px 24px;border-radius:8px}
+  .wa-cta a.wa-btn:hover{background:#1ebe5b;text-decoration:none;color:#fff}
+  @media (max-width:600px){
+    .wa-float span{display:none}
+    .wa-float{padding:14px}
+    .site-footer{padding-bottom:84px}
+  }
 </style>
 </head>
 <body>
@@ -269,8 +287,26 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <p><strong>Ragu ukuran LMB gedung Pak Bos sudah pas? Konsultasikan dulu dengan tim Markaswalet.</strong></p>
 <figure class="gbr cta-banner"><a href="https://wa.me/6285235350662?text=Halo%20Admin%20Markaswalet%2C%20saya%20ingin%20konsultasi%20masalah%20RBW%20saya.%20%28Dari%20artikel%3A%20Ukuran%20LMB%20Walet%20yang%20Ideal%20Berapa%3F%20Ini%20Patokannya%2C%20Pak%20Bos%21%29" target="_blank" rel="noopener"><img src="https://lh3.googleusercontent.com/d/1sjGf0r-5NPOdKHc85zJwPJriwatGg33x=w1600" alt="Konsultasikan masalah RBW Anda di Markaswalet" width="3600" height="1200" loading="lazy"></a></figure>
 </article>
+    <aside class="wa-cta" aria-label="Hubungi kami lewat WhatsApp">
+      <h2>Butuh suara walet yang pas untuk gedung Anda?</h2>
+      <p>Tanyakan langsung ke tim KicauWalet lewat WhatsApp.</p>
+      <a class="wa-btn wa-link" href="https://wa.me/6287725260196" target="_blank" rel="noopener">Chat via WhatsApp</a>
+    </aside>
   </div>
 </main>
+
+<a class="wa-float wa-link" href="https://wa.me/6287725260196" target="_blank" rel="noopener" aria-label="Chat WhatsApp KicauWalet">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2a9.9 9.9 0 0 0-8.5 14.9L2 22l5.25-1.38A9.9 9.9 0 1 0 12.04 2zm0 18.1a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 1 1 6.98 3.86zm4.5-6.14c-.25-.12-1.46-.72-1.69-.8-.23-.08-.39-.12-.56.12-.17.25-.64.8-.78.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.24-1.47-1.38-1.72-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.12-.14.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.23.25-.87.85-.87 2.07s.89 2.4 1.01 2.57c.12.17 1.75 2.67 4.24 3.75.59.25 1.05.4 1.41.51.59.19 1.13.16 1.56.1.48-.07 1.46-.6 1.67-1.17.2-.58.2-1.07.14-1.17-.06-.1-.23-.17-.48-.29z"/></svg>
+  <span>Chat WhatsApp</span>
+</a>
+<script>
+(function(){
+  var t=(document.title||'').trim();
+  var msg='Halo KicauWalet, saya ingin bertanya tentang: '+t+' ('+location.href+')';
+  var links=document.querySelectorAll('a.wa-link');
+  for(var i=0;i<links.length;i++){links[i].href='https://wa.me/6287725260196?text='+encodeURIComponent(msg);}
+})();
+</script>
 
 <footer class="site-footer">
   <div class="wrap">
